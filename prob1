@@ -1,0 +1,42 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main ()
+{
+	int p, AddHrsA, TotalAmountDueA, AddHrsB, TotalAmountDueB, aA, aB;
+	cout << "This program will show how much your monthly bill is \ndepending on your chosen package";
+	cout << "\n\n1. Package A: for P995/mo, 10 hrs of access. Additional hrs = P20/hr" << endl;
+	cout << "2. Package B: for P1495/mo, 20 hrs of access. Additional hrs = P10/hr" << endl;
+	cout << "3. Package C: for P1995/mo of unlimited access." << endl;
+	cout << "\n\nWhat is your chosen package (1, 2, or 3)? "; cin >> p;
+	
+	if (p == 1)
+	{
+	cout << "Enter number of additional hours: "; cin >> aA;
+	
+	AddHrsA = aA * 20;
+	TotalAmountDueA = 995 + AddHrsA;
+	
+	cout << "Your total amount due is: " << TotalAmountDueA;}
+	
+	else if (p == 2)
+	{
+	cout << "Enter number of additional hours: "; cin >> aB;
+	
+	AddHrsB = aB * 10;
+	TotalAmountDueB = 1495 + AddHrsB;
+	
+	cout << "Your total amount due is: " << TotalAmountDueB;}
+
+	else if (p == 3)
+	{
+	cout << "Your total amount due is: 1995";}
+	
+	else
+	{
+	cout << "Invalid Input";}
+	
+	_getch();
+	return 0;
+}
