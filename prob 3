@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main ()
+{
+	float x, y, z, V1, V2, V3, V4, V5;
+	z = 2.5;
+	cout << "This program will compute for the value of V" << endl;
+	cout << "Formulas: " << endl;
+	cout << " V = yz" << endl;
+	cout << " V = x + y/z" << endl;
+	cout << " V = |(x - y)/z|" << endl;
+	cout << " V = x - ((y + z)*0.5)" << endl;
+	cout << " V = x + y + z" << endl;
+	
+	cout << "\n\nEnter value for x: "; cin >> x;
+	cout << "Enter value for y: "; cin >> y;
+	
+	if (x==1 && y>1 && y<5)
+	{V1 = x*y*z;
+	cout << "The value of V is: " << V1;}
+	
+	else if (x==1 && y>=5)
+	{V2 = x + y/z;
+	cout << "The value of V is: " << V2;}
+	
+	else if (x==2 && y<=5)
+	{fabs (V3 = x + y/z);
+	cout << "The value of V is: " << fabs (V3);}
+	
+	else if (x==2 && y>5)
+	{V4 = x - (0.5*(y+z));
+	cout << "The value of V is: " << V4;}
+	
+	else if (x<=1 && x>=0 && y<=1 && y>=0)
+	{V5=x+y+z;
+	cout << "The value of V is: " << V5;}
+	
+	return 0;}
