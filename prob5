@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n = 1;
+	cout << "Counting..." << endl;
+	for (n > 0 ; n < 10;n++)
+	{cout << n << ", ";}
+	for (n > 9; n < 31; n+=2)
+	{cout << n << ", ";}
+	return 0;
+}
