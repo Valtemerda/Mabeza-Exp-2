@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x, y, z;
+	cout << "This program will display the largest of the three numbers." << endl;
+	cout << "\n\nEnter the first number: "; cin >> x;
+	cout << "Enter second number: "; cin >> y;
+	cout << "Enter third number: "; cin >> z;
+	
+	if (x > y && x > z)
+	{cout << "\nThe largest of the three numbers is: " << x;
+	}
+	else if ( y > x && y > z)
+	{cout << "\nThe largest of the three numbers is: " << y;
+	}
+	else if ( z > x && z > y)
+	{cout << "\nThe largest of the three numbers is: " << z;
+	}
+	else if (x == y && x > z && y > z)
+	{cout << "\nThe largest of the three numbers is: " << x;
+	}
+	else if (z== y && z > x && y > x)
+	{cout << "\nThe largest of the three numbers is: " << z;
+	}
+	else if (x == z && x > y && z > y)
+	{cout << "\nThe largest of the three numbers is: " << x;
+	}
+	else if (x==z && y==z)
+	{cout << "\nThe largest of the three numbers is: " << x;
+	}
+	
+	return 0;
+}
