@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x = 0, y = 1, z, a;
+	cout << "The Fibonacci numbers: " << endl;
+	for (a = 0; a < 22; a++)
+	{
+		if (a <= 1)
+		z = a;
+		else
+		{
+			z = x + y;
+			x = y;
+			y = z;
+		}
+		cout << z << ", ";
+	}
+	
+	return 0;
+}
