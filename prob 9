@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int row, col, a, b;
+	cout << "How many rows? "; cin >> row;
+	cout << "How many columns? "; cin >> col;
+	
+	for (b=0; b < row; b++)
+	{
+		cout << "\n";
+		for (a=0; a < col; a++)
+		{
+			cout << "*";
+		}
+	}
+	return 0;	
+}
